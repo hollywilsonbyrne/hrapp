@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dateTo: 2015-04-19
+  dateFrom: 2015-04-19
+  Department: MyString
+  Employee: MyString
+
+two:
+  dateTo: 2015-04-19
+  dateFrom: 2015-04-19
+  Department: MyString
+  Employee: MyString
