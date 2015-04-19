@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hrapp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title>HR App</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
-  
-<%= link_to "Home", root_path %>
-<%= link_to "Login", root_path %>
-<%= link_to "Contact", welcome_contact_path %>
-<%= link_to "About us", welcome_about_path %>
 
-<%= yield %>
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "About Us", welcome_about_path %></li>
+    <li><%= link_to "Contact", welcome_contact_path %></li>
+    <li><%= link_to "Holidays", holidays_path %></li>
+    <li><%= link_to "Login", root_path %></li>
+  </ul>
+  
+  <%= yield %>
+  
+</div>
 
 </body>
 </html>
