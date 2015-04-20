@@ -8,7 +8,7 @@ class HolidaySearch
   end
   
   def scope
-    Holiday.where('date BETWEEN ? AND ?', @dateTo_from, @dateFrom_to)
+    Holiday.where('dateTo_from BETWEEN ? AND ?', @dateTo_from, @dateFrom_to)
   end
   
   private
