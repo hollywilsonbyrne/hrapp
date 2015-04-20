@@ -1,4 +1,15 @@
+
+<div class="row">
 <h1>Listing holidays</h1>
+<div class="pull-right range-query">
+  
+  <%= form_tag form_tag holidays_path, method: :get do %>
+    <%= text_field_tag 'search[dateTo_from]', @search.dateTo_from %>
+    <%= text_field_tag 'search[dateFrom_to]', @search.dateFrom_to %>
+    <%= submit_tag 'search', class: 'btn_search-button' %>
+  <% end %>  
+  </div>
+  </div>
 <div class="media">
   <div class="media-body">
     <table class="table table-hover">
